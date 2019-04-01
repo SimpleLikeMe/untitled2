@@ -40,7 +40,7 @@ def login():
 def register():
     """用户登录逻辑处理"""
     if request.method == "GET":
-        return render_template("/register.html")
+        return render_template("/login.html")
 
     elif request.method == "POST":
         # 获取表单输入的数据
@@ -56,7 +56,7 @@ def register():
 
         else:
             print("注册失败")
-            return render_template("/register.html")
+            return render_template("/login.html")
 
 
 @app.route("/user_home")
