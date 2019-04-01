@@ -234,3 +234,5 @@ def comment():
 if __name__ == "__main__":
     # 绑定ip端口号启动程序
     app.run(host="192.168.12.147", port=8888, debug=True)
+    # git获取路径
+    git = "https://github.com/zzy0371/Py1901Advance.git"
