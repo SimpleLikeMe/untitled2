@@ -20,6 +20,7 @@ def login():
         return render_template("/login.html")
     elif request.method == "POST":
         # 获取表单数据
+
         account = request.form["account"]
         password = request.form["password"]
         if account and ormmanage.check_user(account=account, password=password):
