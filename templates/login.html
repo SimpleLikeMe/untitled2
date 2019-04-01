@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="../static/css/index.css">
+
+	</head>
+	<body style="background-color: skyblue;">
+		<div class="index" style="width: 420px;height: 600px; margin: auto;">
+			<div>
+				<div class="button">登录</div>
+				<div class="button">注册</div>
+				<div class="inner">
+					<form action="/login" method="post">
+						<input type="text" name="username" placeholder="账号" ><br>
+						<input type="password" name="password" placeholder="密码"/><br>
+						<button type="submit" id="login">登录</button>
+					</form>
+				</div>
+				<div class="inner">
+					<form action="/register" method="post">
+						<input type="text" name="username" placeholder="账号"><br>
+						<input type="password" name="password" placeholder="密码"/><br>
+						<button type="submit" id="regist">注册</button>
+					</form>
+				</div>
+			</div>
+			<script src="../static/js/app/index.js" type="text/javascript" charset="utf-8"></script>
+
+		</div>
+
+	</body>
+</html>
