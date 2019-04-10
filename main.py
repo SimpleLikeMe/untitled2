@@ -128,6 +128,7 @@ def manage_article():
     user_name = request.cookies.get("user_name")
     return render_template("manage_article.html", user_name=user_name, article_list=article_list)
 
+
 @app.route("/comment")
 def comment():
     # comemnt = request.form["name"]
